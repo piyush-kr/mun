@@ -65,6 +65,7 @@ button:not(:disabled) {
     filter: brightness(0.2) !important;
 }
 
+
 .m-heroImg img {
     position: absolute;
     top: 0;
@@ -72,6 +73,9 @@ button:not(:disabled) {
     height: 100vh;
     filter: brightness(0.4);
     transition: all 2s ease;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0;
 
 }
 
