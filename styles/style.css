@@ -1,0 +1,659 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+body {
+    overflow-x: hidden;
+}
+
+:root {
+    --primary-blue: #1779ba;
+    --primary-font: 'Maven Pro', sans-serif;
+}
+
+/* Navigation Start -----------------------------------------------*/
+
+.navFixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled),
+button:not(:disabled) {
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.hamburger {
+    display: none !important;
+
+}
+
+
+
+@media (min-width: 1062px) {
+    .m-heroImg img {
+        width: 100vw;
+    }
+}
+
+.overflowNone {
+    overflow-y: hidden;
+}
+
+.m-imgBlur {
+    filter: brightness(0.2) !important;
+}
+
+.m-heroImg img {
+    position: absolute;
+    top: 0;
+    z-index: -5;
+    height: 100vh;
+    filter: brightness(0.4);
+    transition: all 2s ease;
+
+}
+
+
+.hamburger-inner {
+    background-color: white;
+}
+
+.hamburger-inner::before {
+    background-color: white;
+
+}
+
+.hamburger.is-active .hamburger-inner::before {
+    background-color: white;
+}
+
+.hamburger.is-active .hamburger-inner::after {
+    background-color: white;
+}
+
+.hamburger-inner::after {
+    background-color: var(--primary-blue);
+
+}
+
+.hamburgerMenu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hamburgerMenu ul li {
+    font-size: 1.5rem;
+    list-style: none;
+    padding: 10px;
+    transition: all .5s ease;
+
+}
+
+.hamburgerMenu ul li:hover a {
+    color: var(--primary-blue);
+}
+
+.aimun-navlinks li:hover a {
+    color: var(--primary-blue);
+    transition: all .2s ease;
+}
+
+.aimun-navlinks li:hover a {
+    color: var(--primary-blue);
+    transition: all .2s ease;
+
+}
+
+.hamburgerMenu {
+
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburgerMenu {
+    display: none;
+}
+
+.navActive {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transition: all .5s ease;
+    z-index: 99999999;
+}
+
+@keyframes navigation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.hamburgerActive {
+    display: flex;
+    animation: navigation 2s;
+    transition: all 2s ease;
+}
+
+a {
+    color: white;
+}
+
+.logoImg img {
+    width: 70px;
+
+}
+
+.navigation-logo h1 {
+    color: white;
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    margin-left: 24px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.navigation-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    background: transparent;
+}
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-top: 7px;
+}
+
+.navigation ul li {
+    padding: 10px;
+    font-weight: 500;
+
+}
+
+.nav-link {
+    padding: 0;
+}
+
+.navAbout {
+    background-color: #201E1F;
+}
+
+nav {
+    background-color: transparent;
+}
+
+
+
+/* Navigation End -------------------------------------------------*/
+
+
+/* Hero Section---------------------------------------------------- */
+
+.heroSection {
+    position: relative;
+    height: 100vh;
+}
+
+.heroVideo {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+}
+
+.black-tint {
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.7458333675266982) 50%, rgba(0, 0, 0, 0.17440479609812676) 100%);
+    z-index: -1;
+    position: absolute;
+    top: 0;
+}
+
+.heroContent {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: center;
+    color: white;
+    width: 82%;
+    margin: auto auto;
+}
+
+.heroContent h1 {
+    font-weight: 800;
+    font-family: var(--primary-font);
+    font-size: 3.5rem;
+    margin-bottom: 24px;
+}
+
+.heroContent h2::after {
+    content: '';
+    display: block;
+    width: 400px;
+    height: 5px;
+    background-color: orange;
+    margin-top: 16px;
+}
+
+/* Hero Section End ----------------------------------------------- */
+
+/* Section 1 Theme Start -------------------------------------------*/
+
+.theme h1 {
+    color: var(--primary-blue);
+    font-family: var(--primary-font);
+    font-weight: bold;
+    padding: 16px;
+    font-size: 2.3rem;
+    text-align: center;
+    margin-top: 56px;
+    margin-bottom: 40px;
+}
+
+p {
+    text-align: justify;
+}
+
+
+.tagline {
+    text-align: right;
+}
+
+.tagline span {
+    font-family: 'Kaushan Script', cursive;
+    color: var(--primary-blue);
+    font-size: 2rem;
+    padding-right: 20px;
+}
+
+/* Section 1 Theme End ----------------------------------------------*/
+
+/* Section 2 About Start------------------------------------------------- */
+
+.aboutMun {
+    background-color: #201E1F;
+    margin-top: 72px;
+}
+
+.aboutMun p {
+    color: white;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    width: 80%;
+    margin: auto;
+    line-height: 1.7rem;
+}
+
+.refugee img {
+    width: min(80%, 800px);
+}
+
+.refugee {
+    display: flex;
+    justify-content: center;
+}
+
+/* Section 2 About End------------------------------------------------- */
+
+/* Committees */
+
+.committeeGroup img {
+    width: min(40%, 300px);
+    margin-right: 20px;
+}
+
+.committeeGroup {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+}
+
+.simulation {
+    margin-top: 56px;
+    margin-bottom: 56px;
+}
+
+.simulation h1 {
+    color: var(--primary-blue);
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: bold;
+    font-size: 2.3rem;
+    text-align: center;
+    margin-bottom: 56px;
+
+}
+
+.committeeGroup::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.committeeGroup {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+
+/* Committees */
+
+/* Footer */
+footer {
+    margin-top: 56px;
+    background-color: #201E1F;
+    height: 550px;
+    color: white;
+}
+
+footer h2 {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 16px;
+}
+
+.socialMedia {
+    width: 40px;
+    cursor: pointer;
+}
+
+.mediaLinks {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+
+.whiteLogo {
+    display: flex;
+    justify-content: center;
+    padding-top: 24px;
+}
+
+.whiteLogo img {
+    width: 200px;
+}
+
+hr {
+    margin-top: 56px;
+}
+
+footer p {
+    text-align: center;
+    display: block;
+}
+
+/* About Us Page */
+
+.aboutSection img {
+    width: 200px;
+    margin-top: 56px;
+}
+
+.aboutUs {
+    font-family: 'Maven Pro', sans-serif;
+    text-align: center;
+
+}
+
+.aboutUs h1 {
+    color: var(--primary-blue);
+    margin-bottom: 24px;
+    font-weight: bold;
+}
+
+.aboutSection p {
+    text-align: justify;
+}
+
+.aboutSection {
+    margin-top: 56px;
+}
+
+.aboutSection-box {
+    display: flex;
+
+
+}
+
+.aboutSection-img {
+    width: 50%;
+    z-index: -1;
+}
+
+.aboutSection-img img {
+    width: 80%;
+    transform: translateY(-50px);
+}
+
+.aboutSection-content {
+    width: 50%;
+}
+
+.aboutSection-box {
+    margin-top: 64px;
+}
+
+.aboutSection {
+    margin-top: 64px;
+}
+
+/* About Us Page End*/
+
+/* Secratariat */
+
+.secratariatTitle {
+    margin-top: 100px;
+    color: var(--primary-blue);
+    text-align: center;
+    font-weight: bold;
+}
+
+.secratariat {
+    margin-top: 56px;
+}
+
+.secratariat p {
+    font-size: 1.2rem;
+}
+
+.secName {
+    font-weight: bold;
+    color: var(--primary-blue);
+}
+
+/* Secratariat End */
+
+/* Ambassadors */
+
+.ambassador-ui {
+    margin-top: 200px;
+}
+
+.ambassadorList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ambassador {
+    margin-top: 130px;
+}
+
+.ambassador h1 {
+    text-align: center;
+    color: var(--primary-blue);
+    font-weight: bold;
+    margin-bottom: 56px;
+}
+
+.ambassadorPhoto {
+    max-width: 250px;
+    margin: 50px;
+    box-shadow: 10px 10px 15px black;
+}
+
+.ambassadorPhoto img {
+    width: 100%;
+}
+
+/* Media */
+
+.aimunMedia {
+    margin-top: 170px;
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.mediaVideo {
+    /* max-width: 500px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.mediaVideo video {
+    max-width: 600px;
+    margin: 20px;
+    margin-bottom: 50px;
+    box-shadow: 10px 10px 20px black;
+}
+
+/* Media End*/
+
+/* Contact */
+
+.contact {
+    margin-top: 100px;
+}
+
+.contact h1 {
+    color: var(--primary-blue);
+    font-weight: bold;
+    margin-bottom: 54px;
+    text-align: center;
+}
+
+.contactperson {
+    margin-bottom: 54px;
+    display: block;
+    border-radius: 20px;
+    padding: 32px;
+
+}
+
+/* Contact End*/
+
+
+/* Ambassadors End*/
+
+@media (max-width: 1062px) {
+    .aimun-navlinks {
+        display: none !important;
+    }
+
+    .navigation-logo {
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        display: flex !important;
+    }
+
+    .black-tint {
+        display: none;
+    }
+
+    .heroVideo {
+        display: none;
+    }
+
+    .aboutSection-box {
+        flex-direction: column;
+    }
+
+    .aboutSection-content {
+        width: 100%;
+    }
+
+    .aboutSection-img {
+        width: 100%;
+    }
+
+    .ambassadorPhoto {
+        max-width: 200px;
+        margin: 10px;
+        margin-bottom: 30px;
+    }
+
+    .secratariat p {
+        font-size: 1rem;
+    }
+
+    .mediaVideo {
+        width: 400px;
+
+    }
+
+    .mediaVideo video {
+        margin-bottom: 40px;
+        max-width: 400px;
+    }
+
+
+}
