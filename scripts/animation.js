@@ -20,7 +20,7 @@ tl.from(".heroContent h3", { duration: .5, opacity: 0, x: 100, ease: "power4.out
 // gsap.from(".tagline", { scrollTrigger: ".tagline", scale: 2, x: -400, duration: 2, opacity: 0, ease: "power4.out", delay: 0 })
 // gsap.from(".aboutMun p", { scrollTrigger: ".aboutMun p", scale: 2, duration: 2, opacity: 0, ease: "power4.out" })
 // gsap.from(".aboutMun img", { scrollTrigger: ".aboutMun img", y: 500, duration: 1, opacity: 0, ease: "power4.out" })
-gsap.from(".committeeGroup img", { scrollTrigger: ".committeeGroup", y: 500, scale: 5, duration: 2, delay: 1, opacity: 0, ease: "power4.out" })
+//gsap.from(".committeeGroup img", { scrollTrigger: ".committeeGroup", y: 500, scale: 5, duration: 2, delay: 1, opacity: 0, ease: "power4.out" })
 
 
 
