@@ -19,10 +19,6 @@ body {
 
 /* }  */
 
-nav {
-    transform: translateY(-4px);
-}
-
 body {
     width: 100vw;
     overflow-x: hidden;
